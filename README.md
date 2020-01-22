@@ -1,13 +1,17 @@
 # Cryptography
 Cryptography is a method of protecting information and communications through the use of codes so that only those for whom the information is intended can read and process it. The pre-fix "crypt" means "hidden" or "vault" and the suffix "graphy" stands for "writing."
 
+# random-md5-generator 
+creating a random password with md5sum encryption and then save the encrypted password in md5keys.txt
 
-
-random-md5-generator creating a random password with md5sum encrypt it and then save the encrypted password in md5keys.txt
 # How to use 
 ./random-md5-generator
-292425650
-41c16939b4f1a957f4fb773663aa5181  -
+Genateted Number:
+879076701
+-----------------------
+Number to md5 Password:
+82fc843ab6a4c1767572f75775800ae8  -
+
 
 delete the  - from the file md5keys.txt
 
