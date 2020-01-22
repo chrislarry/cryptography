@@ -1,0 +1,14 @@
+#!/bin/bash
+PASS="$(shuf -i 100000000-999999999 -n 1)"
+echo "Genateted Number:"
+echo ${PASS}
+#MD5="$(echo -n "${PASS}" | md5sum >> md5keys.txt)"
+md5="${PASS}"
+hash="$(echo -n "$md5" | md5sum )"
+echo "$hash">> md5keys.txt
+echo "-----------------------"
+echo "Number to md5 Password:"
+echo "$hash"
+
+# crack with
+# hashcat -m 0 -a 3  md5keys.txt ?d?d?d?d?d?d?d?d
