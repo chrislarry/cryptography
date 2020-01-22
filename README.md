@@ -20,7 +20,17 @@ Number to md5 Password:
 
 delete the  - from the file md5keys.txt
 
-crack with
+# crack with
+
 hashcat -m 0 -a 3  md5keys.txt ?d?d?d?d?d?d?d?d
-then use 
-hashcat -m 0 -a 3  md5keys.txt ?d?d?d?d?d?d?d?d --show or hashcat -m 0 -a 3  md5keys.txt ?d?d?d?d?d?d?d?d --show >> md5keys.txt to see the unencypt keys 
+
+
+# then use 
+
+hashcat -m 0 -a 3  md5keys.txt ?d?d?d?d?d?d?d?d --show 
+
+or 
+
+hashcat -m 0 -a 3  md5keys.txt ?d?d?d?d?d?d?d?d --show >> md5keys.txt
+
+to see the unencypt keys 
