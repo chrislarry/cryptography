@@ -6,10 +6,15 @@ creating a random password with md5sum encryption and then save the encrypted pa
 
 # How to use 
 ./random-md5-generator
+
 Genateted Number:
+
 879076701
+
 -----------------------
+
 Number to md5 Password:
+
 82fc843ab6a4c1767572f75775800ae8  -
 
 
